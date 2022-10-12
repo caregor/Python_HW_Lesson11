@@ -20,27 +20,47 @@
 
 Например: 20 м*5000 м*25 кг*5 см = 12500 т.
 """
-import time as t
 
 
-# Task 1
+# import time as t
+#
+#
+# # Task 1
+#
+# class TrafficLight:
+#     __color = ['red', 'yellow', 'green']
+#
+#     def running(self):
+#         while True:
+#             print(self.__color[0])
+#             t.sleep(7)
+#             print(self.__color[1])
+#             t.sleep(2)
+#             print(self.__color[2])
+#             t.sleep(5)
+#             if input() == 'q':
+#                 print('quit')
+#                 break
+#
+#
+# light = TrafficLight()
+#
+# light.running()
 
-class TrafficLight:
-    __color = ['red', 'yellow', 'green']
+# Task 2
 
-    def running(self):
-        while True:
-            print(self.__color[0])
-            t.sleep(7)
-            print(self.__color[1])
-            t.sleep(2)
-            print(self.__color[2])
-            t.sleep(5)
-            if input() == 'q':
-                print('quit')
-                break
-
-
-light = TrafficLight()
-
-light.running()
+# class Road:
+#     def __init__(self, length, width):
+#         self.__height = None
+#         self.__weight = None
+#         self._length = length
+#         self._width = width
+#
+#     def normal(self):
+#         self.__weight = 25
+#         self.__height = 5
+#         return self._width * self._length * self.__weight * self.__height / 1000
+#
+#
+# r = Road(5000, 20)
+# print(r.normal(), 'tons')
